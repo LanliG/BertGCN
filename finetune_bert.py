@@ -16,8 +16,8 @@ from model import BertClassifier
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--max_length', type=int, default=128, help='the input length for bert')
-parser.add_argument('--batch_size', type=int, default=8)
-parser.add_argument('--nb_epochs', type=int, default=60)
+parser.add_argument('--batch_size', type=int, default=32)
+parser.add_argument('--nb_epochs', type=int, default=8)
 parser.add_argument('--bert_lr', type=float, default=1e-4)
 parser.add_argument('--dataset', default='20ng', choices=['20ng', 'R8', 'R52', 'ohsumed', 'mr'])
 parser.add_argument('--bert_init', type=str, default='roberta-base',
