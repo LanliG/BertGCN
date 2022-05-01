@@ -55,7 +55,7 @@ lines = f.readlines()
 for line in lines:
     doc_content_list.append(line.strip())
 f.close()
-# print(doc_content_list)
+print(len(doc_content_list))
 
 train_ids = []
 for train_name in doc_train_list:
