@@ -15,7 +15,7 @@ from scipy.spatial.distance import cosine
 if len(sys.argv) != 2:
 	sys.exit("Use: python build_graph.py <dataset>")
 
-datasets = ['20ng', 'R8', 'R52', 'ohsumed', 'mr']
+datasets = ['20ng', 'R8', 'R52', 'ohsumed', 'mr', 'fashion']
 # build corpus
 dataset = sys.argv[1]
 
@@ -55,7 +55,7 @@ lines = f.readlines()
 for line in lines:
     doc_content_list.append(line.strip())
 f.close()
-# print(doc_content_list)
+print(len(doc_content_list))
 
 train_ids = []
 for train_name in doc_train_list:
