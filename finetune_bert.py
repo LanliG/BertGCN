@@ -180,6 +180,7 @@ def log_training_results(trainer):
                 'classifier': model.classifier.state_dict(),
                 'optimizer': optimizer.state_dict(),
                 'epoch': trainer.state.epoch,
+                'tokenizer': model.tokenizer
             },
             os.path.join(
                 ckpt_dir, 'checkpoint.pth'
